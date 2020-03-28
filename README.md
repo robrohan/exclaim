@@ -23,5 +23,7 @@ A post so far looks like this:
     // Post     | ~2000 chars? |
     //////////////////////////////////////////////////////////////////////////
 
+(the ID is the URL)
+
 And the post will live "after the hash" on the URL.
 
