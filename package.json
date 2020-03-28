@@ -1,0 +1,56 @@
+{
+  "name": "exclaim",
+  "version": "1.0.0",
+  "description": "Distributed social network",
+  "main": "dist/index.js",
+  "author": "Rob Rohan",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "build": "npx parcel build src/index.html --out-dir dist/ --public-url ./",
+    "start": "npx parcel serve src/index.html",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watchAll"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^23.3.14",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.13.0",
+    "jest": "^25.2.3",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.3.1",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.7.4"
+  },
+  "module": "es6",
+  "eslintConfig": {
+    "extends": "google",
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "es6": true
+    },
+    "overrides": [
+      {
+        "files": [
+          "src/*.ts"
+        ],
+        "excludedFiles": "*.test.ts"
+      }
+    ],
+    "rules": {
+      "require-jsdoc": "off"
+    }
+  },
+  "jest": {
+    "verbose": false,
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/?(*.)+(spec|test).+(ts|tsx|js)"
+    ]
+  }
+}

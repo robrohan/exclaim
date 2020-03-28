@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "declaration": true,
+    "target": "es5",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "~*": [
+        "./*"
+      ]
+    },
+    "lib": [
+      "es2018",
+      "es5",
+      "dom"
+    ],
+    "types": [
+      "jest"
+    ],
+    "typeRoots": [
+      "./src",
+      "./node_modules/@types"
+    ],
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ],
+}
